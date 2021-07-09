@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#table-calculator{
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(0,0,0, 0.5);
+}
+
+#buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 50px;
+    grid-gap: 7px;
+}
+
+#screen{
+    width: 100%;
+    height: 50px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: rgba(0,0,0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+#output{
+    padding-left: 15px;
+    margin-right: 15px;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+#buttons > input[type=button]{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background-color: rgba(0,0,0, 0.25);
+    transition: all .05s ease-in-out;
+}
+
+#buttons > input[type=button]:hover{
+    opacity: 0.7;
+    font-size: 1.2rem;
+    box-shadow: none;
+    transform: scale(0.95);
+}
+
+@media screen and (max-width: 600px){
+    #table-calculator{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #table-calculator{
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    #table-calculator{
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    #table-calculator{
+        width: 220px;
+    }
+
+    #buttons{
+    grid-auto-rows: 35px;
+    grid-gap: 7px;
+    }
+
+}

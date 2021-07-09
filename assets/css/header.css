@@ -1,0 +1,37 @@
+#header-container{
+    width: 100%;
+    height: auto;
+}
+
+
+header > div span{
+    color: white;
+}
+
+.card-header{
+    background-color: #292929;
+    width: 150px;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: calc(50% - 75px);
+    border-radius: 0 0 8px 8px;
+}
+
+.card-header:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.card-header:nth-child(2){
+    transform: skewX(20deg) translate(-10px, 0);
+}
+.card-header:nth-child(3){
+    transform: skewX(-20deg) translate(10px, 0);
+}
+
+.card-header:nth-child(1) i{
+    margin-left: 4px;
+}
